@@ -7,8 +7,10 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { ButtonModule } from 'primeng/button';
 import { MenubarModule } from 'primeng/menubar';
-import { ArticleListComponent } from './articles/article-list/article-list.component';
+import { ArticlesListComponent } from './articles/articles-list/articles-list.component';
 import { HomePageComponent } from './home-page/home-page/home-page.component';
+import { ContactPageComponent } from './contact-us/contact-page/contact-page.component';
+import { ProjectsListComponent } from './projects/projects-list/projects-list.component';
 
 
 @NgModule({
@@ -16,8 +18,10 @@ import { HomePageComponent } from './home-page/home-page/home-page.component';
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    ArticleListComponent,
+    ArticlesListComponent,
     HomePageComponent,
+    ContactPageComponent,
+    ProjectsListComponent,
   ],
   imports: [
     BrowserModule,

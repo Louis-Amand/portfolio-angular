@@ -1,0 +1,25 @@
+{
+    "shared": {
+        "header": {
+            "menubar": {
+                "cv": "Curriculum Vitae",
+                "whoami": "Who am I ?",
+                "skills": "My skills",
+                "projects": "My projects",
+                "articles": "My articles",
+                "contact": "Contact me",
+                "language": {
+                    "french": "Français",
+                    "english": "English",
+                    "russian": "Русский"
+                },
+                "theme": {
+                    "light": "Light theme",
+                    "dark": "Dark theme"
+                },
+                "daltonism": "Daltonism",
+                "dyslexia": "Dyslexia"
+            }
+        }
+    }
+}

@@ -7,6 +7,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { ButtonModule } from 'primeng/button';
 import { MenubarModule } from 'primeng/menubar';
+import { ArticleListComponent } from './articles/article-list/article-list.component';
+import { HomePageComponent } from './home-page/home-page/home-page.component';
 
 
 @NgModule({
@@ -14,6 +16,8 @@ import { MenubarModule } from 'primeng/menubar';
     AppComponent,
     FooterComponent,
     HeaderComponent,
+    ArticleListComponent,
+    HomePageComponent,
   ],
   imports: [
     BrowserModule,

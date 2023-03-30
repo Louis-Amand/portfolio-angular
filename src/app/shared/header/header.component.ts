@@ -1,4 +1,3 @@
-import { isNgContainer } from '@angular/compiler';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
@@ -20,28 +19,29 @@ export class HeaderComponent implements OnInit {
                     {
                         label: 'Qui suis-je ?',
                         icon: 'pi pi-fw pi-comments',
-
+                        routerLink: '#about-me',
                     },
                     {
                         label: 'Mes compétences',
                         icon: 'pi pi-fw pi-bolt',
-
+                        routerLink: '#skills',
                     },
-
                 ],
-
             },
             {
                 label: 'Mes projets',
                 icon: 'pi pi-fw pi-folder',
+                routerLink: '/projects',
             },
             {
                 label: 'Mes rédactions',
                 icon: 'pi pi-fw pi-pencil',
+                routerLink: '/articles',
             },
             {
                 label: 'Me contacter',
                 icon: 'pi pi-fw pi-send',
+                routerLink: '/contact-me',
             },
             {
                 label: "",

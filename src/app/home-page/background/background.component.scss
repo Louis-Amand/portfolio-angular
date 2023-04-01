@@ -1,0 +1,38 @@
+.background-home-page {
+    background-image: url("../../../assets/img/background.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    margin-top: -25px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #000;
+    font-weight: 700;
+}
+
+.first-title {
+
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.second-title {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.button-portfolio {
+    border-color: #fff !important;
+    color: #fff !important;
+    margin-top: 4rem;
+}

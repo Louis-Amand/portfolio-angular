@@ -1,9 +1,15 @@
 .title-navbar {
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: white;
     white-space: nowrap;
     text-decoration-line: none;
 
+}
+
+.small-title-navbar {
+    font-size: 0.7em;
+    color: white;
+    margin-left: 0.5em;
 }
 
 p-menubarsub {
@@ -13,14 +19,16 @@ p-menubarsub {
 }
 
 .menubar {
-    background-color: #383333;
+    background-color: rgb(17 24 39/1);
     border-radius: 0;
     border: none;
+    position: relative;
+    z-index: 1;
 }
 
 @media screen and (max-width: 960px) {
     .p-menubar .p-menubar-root-list {
-        background-color: #383333;
+        background-color: rgb(17 24 39/1);
     }
 
     .p-menubar .p-menubar-button {
@@ -40,7 +48,7 @@ p-menubarsub {
 }
 
 .p-menuitem-active {
-    background-color: #383333 !important;
+    background-color: #11151d;
 }
 
 .p-menuitem-icon {
@@ -49,21 +57,21 @@ p-menubarsub {
 
 .p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link,
 .p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link:not(.p-disabled):hover {
-    background-color: #383333 !important;
+    background-color: #11151d;
 }
 
 .p-menubar .p-submenu-list {
-    background-color: #383333 !important;
+    background-color: rgb(17 24 39/1);
     border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
 }
 
 .p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link:not(.p-disabled):hover {
-    background-color: #5b5555 !important;
+    background-color: #1d222d !important;
 }
 
 .p-menubar .p-submenu-list :hover {
-    background-color: #5b5555 !important;
+    background-color: #1d222d !important;
 }
 
 .p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link .p-submenu-icon {
@@ -72,4 +80,11 @@ p-menubarsub {
 
 .user-button {
     color: white !important;
+}
+
+@media screen and (max-width: 960px) {
+    .p-menubar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }

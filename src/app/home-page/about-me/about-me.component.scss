@@ -2,20 +2,22 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: auto;
-    grid-template-areas: "circle text";
+    grid-template-areas: "photo text";
     max-width: 100%;
-    padding: 2em;
     align-items: center;
     /* nouvelle ligne */
-    margin: 0 10%;
+    margin: 5% 10%;
+    gap: 5em;
 }
 
 .photo {
     height: 100%;
     width: 100%;
-    background-image: url("../../../assets/img/louis.svg");
+    background-color: #111827;
+    // background-image: url("../../../assets/img/louis.svg");
     background-size: cover;
     background-position: center;
+    border-radius: 1.5em;
 }
 
 .text {
@@ -53,4 +55,122 @@
     background-clip: text;
     color: transparent;
     margin-right: 0.8em;
+}
+
+
+.second-grid p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.second-grid {
+    display: grid;
+    background-color: #eaeef4;
+    margin: 5% 10%;
+    border-radius: 1.5em;
+    padding: 2em 4em;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "first-col second-col";
+    max-width: 100%;
+    align-items: center;
+    gap: 2em;
+}
+
+.second-grid h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0.5em;
+
+}
+
+
+.first-col {
+
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.first-col h2 {
+    font-size: 2em;
+
+}
+
+.second-col {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-image {
+    height: 50vh;
+    width: 100%;
+    background-color: #111827;
+    // background-image: url("../../../assets/img/louis.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.5em;
+}
+
+.numbers-row {
+    text-align: center;
+    display: grid;
+    margin: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "number-1 number-2 number-3";
+    max-width: 100%;
+    gap: 0.5em;
+}
+
+.number-text {
+    font-size: 1.5em !important;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0.5em !important;
+    padding: 0;
+}
+
+.number {
+    font-size: 2em !important;
+}
+
+.button-row p-button {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.button-row {
+    padding-top: 2em !important;
+}
+
+.button-row p-button+p-button {
+    margin-left: 2em;
+}
+
+.linkedin-btn {
+    background-color: #640a5a !important;
+    border-radius: 1.5em;
+    border-color: #640a5a !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.github-button {
+    background-color: #394560 !important;
+    border-radius: 1.5em;
+    border-color: #394560 !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #fff !important;
+}
+
+.contact-button {
+    border-radius: 1.5em;
+    color: #111827 !important;
 }

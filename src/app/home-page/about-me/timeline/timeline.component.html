@@ -1,0 +1,10 @@
+<div class="title-timeline">
+    <h2>Mes études et expériences professionelles</h2>
+    <p>Découvrez mon parcours universitaire et professionel </p>
+</div>
+
+<p-timeline [value]="events" class="w-full md:w-20rem" align="alternate">
+    <ng-template pTemplate="content" let-event>
+        {{event.date +" "+ event.status }}
+    </ng-template>
+</p-timeline>

@@ -8,6 +8,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { ButtonModule } from 'primeng/button';
 import { MenubarModule } from 'primeng/menubar';
 import { DividerModule } from 'primeng/divider';
+import { TimelineModule } from 'primeng/timeline';
 import { ArticlesListComponent } from './articles/articles-list/articles-list.component';
 import { HomePageComponent } from './home-page/home-page/home-page.component';
 import { ContactPageComponent } from './contact-us/contact-page/contact-page.component';
@@ -19,6 +20,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BackgroundComponent } from './home-page/background/background.component';
 import { AboutMeComponent } from './home-page/about-me/about-me.component';
+import { TimelineComponent } from './home-page/about-me/timeline/timeline.component';
+import { GeneralInfoComponent } from './home-page/about-me/general-info/general-info.component';
 
 
 @NgModule({
@@ -33,6 +36,8 @@ import { AboutMeComponent } from './home-page/about-me/about-me.component';
     BackgroundComponent,
     AboutMeComponent,
     AppComponent,
+    TimelineComponent,
+    GeneralInfoComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +46,7 @@ import { AboutMeComponent } from './home-page/about-me/about-me.component';
     DividerModule,
     MenubarModule,
     HttpClientModule,
+    TimelineModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

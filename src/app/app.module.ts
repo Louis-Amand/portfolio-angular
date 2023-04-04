@@ -8,11 +8,14 @@ import { HeaderComponent } from './shared/header/header.component';
 import { ButtonModule } from 'primeng/button';
 import { MenubarModule } from 'primeng/menubar';
 import { DividerModule } from 'primeng/divider';
+import { CardModule } from 'primeng/card';
 import { TimelineModule } from 'primeng/timeline';
+import { ChipModule } from 'primeng/chip';
 import { ArticlesListComponent } from './articles/articles-list/articles-list.component';
 import { HomePageComponent } from './home-page/home-page/home-page.component';
 import { ContactPageComponent } from './contact-us/contact-page/contact-page.component';
 import { ProjectsListComponent } from './projects/projects-list/projects-list.component';
+
 
 // import ngx-translate and the http loader
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
@@ -44,8 +47,10 @@ import { GeneralInfoComponent } from './home-page/about-me/general-info/general-
     AppRoutingModule,
     ButtonModule,
     DividerModule,
+    ChipModule,
     MenubarModule,
     HttpClientModule,
+    CardModule,
     TimelineModule,
     TranslateModule.forRoot({
       loader: {

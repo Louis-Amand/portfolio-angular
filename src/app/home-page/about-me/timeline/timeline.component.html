@@ -3,8 +3,26 @@
     <p>Découvrez mon parcours universitaire et professionel </p>
 </div>
 
-<p-timeline [value]="events" class="w-full md:w-20rem" align="alternate">
-    <ng-template pTemplate="content" let-event>
-        {{event.date +" "+ event.status }}
-    </ng-template>
-</p-timeline>
+<div class="timeline">
+    <p-timeline [value]="events" align="alternate">
+        <ng-template pTemplate="content" let-event>
+            <!-- <p>{{event.date}}</p> -->
+            <p-chip label="De 2018 à 2020" class="date"></p-chip>
+            <p-card>
+                <div class="header-grid">
+                    <div class="header-chip"><p-chip label="Étude"></p-chip></div>
+                    <div class="header-status">{{event.status}}</div>
+                </div>
+                <p class="m-0">
+                    Étudiant en IUT Informatique du Grand Ouest Normandie, j'ai pu acquérir des compétences en
+                    développement
+                    web et en base de données.</p>
+                <p><i class="pi pi-star-fill" style="font-size: 1rem; color: yellow;"></i> Obtention d'un Diplôme
+                    Universitaire et
+                    technologique
+                </p>
+            </p-card>
+
+        </ng-template>
+    </p-timeline>
+</div>

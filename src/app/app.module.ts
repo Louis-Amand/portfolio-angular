@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -12,7 +11,7 @@ import { CardModule } from 'primeng/card';
 import { TimelineModule } from 'primeng/timeline';
 import { ChipModule } from 'primeng/chip';
 import { ArticlesListComponent } from './articles/articles-list/articles-list.component';
-import { HomePageComponent } from './home-page/home-page/home-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
 import { ContactPageComponent } from './contact-us/contact-page/contact-page.component';
 import { ProjectsListComponent } from './projects/projects-list/projects-list.component';
 
@@ -22,14 +21,13 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BackgroundComponent } from './home-page/background/background.component';
-import { AboutMeComponent } from './home-page/about-me/about-me.component';
 import { TimelineComponent } from './home-page/about-me/timeline/timeline.component';
-import { GeneralInfoComponent } from './home-page/about-me/general-info/general-info.component';
+import { TextComponent } from './home-page/about-me/text/text.component';
+import { StatisticsComponent } from './home-page/about-me/statistics/statistics.component';
 
 
 @NgModule({
   declarations: [
-
     FooterComponent,
     HeaderComponent,
     ArticlesListComponent,
@@ -37,10 +35,10 @@ import { GeneralInfoComponent } from './home-page/about-me/general-info/general-
     ContactPageComponent,
     ProjectsListComponent,
     BackgroundComponent,
-    AboutMeComponent,
     AppComponent,
     TimelineComponent,
-    GeneralInfoComponent,
+    TextComponent,
+    StatisticsComponent
   ],
   imports: [
     BrowserModule,

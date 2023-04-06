@@ -1,69 +1,9 @@
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto;
-    grid-template-areas: "photo text";
-    max-width: 100%;
-    align-items: center;
-    /* nouvelle ligne */
-    margin: 5% 10%;
-    gap: 5em;
-}
-
-.photo {
-    height: 100%;
-    width: 100%;
-    background-color: #111827;
-    // background-image: url("../../../assets/img/louis.svg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 1.5em;
-}
-
-.text {
-    grid-area: text;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1em;
-    font-size: 1.2em;
-    color: #111827;
-
-}
-
-.greeting {
-    font-size: 1.7em;
-    font-weight: bold;
-    margin: 0;
-    margin-bottom: 0.5em;
-
-}
-
-.contact-info {
-    margin-top: 1em;
-}
-
-.contact-info p {
-    display: inline-block;
-    margin: 0 1.3em;
-}
-
-.contact-info i {
-    background-image: linear-gradient(to bottom, #FB008B, #111827);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    margin-right: 0.8em;
-}
-
-
-.second-grid p {
+.stat-grid p {
     font-size: 1.2em;
     margin: 0;
 }
 
-.second-grid {
+.stat-grid {
     display: grid;
     background-color: #eaeef4;
     margin: 5% 10%;
@@ -77,14 +17,13 @@
     gap: 2em;
 }
 
-.second-grid h2 {
+.stat-grid h2 {
     font-size: 2em;
     font-weight: bold;
     margin: 0;
     margin-bottom: 0.5em;
 
 }
-
 
 .first-col {
 

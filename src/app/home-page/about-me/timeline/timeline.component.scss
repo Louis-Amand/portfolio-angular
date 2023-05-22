@@ -57,5 +57,20 @@
 }
 
 .star-text {
-    color: #640a5a
+    color: #482b67
+}
+@media screen and (max-width: 1200px) {
+
+  .p-timeline-event-opposite,
+  .p-timeline-event-separator{
+    display: none !important;
+  }
+  .p-timeline-event {
+    margin-top: 2em;
+  }
+}
+
+.header-chip{
+  padding:0.5em 1em;
+  border-radius: 30px;
 }

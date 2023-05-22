@@ -7,20 +7,16 @@
     <p-timeline [value]="events" align="alternate">
         <ng-template pTemplate="content" let-event>
             <!-- <p>{{event.date}}</p> -->
-            <p-chip label="De 2018 à 2020" class="date"></p-chip>
+            <p-chip label="{{event.date}}" class="date"></p-chip>
             <p-card>
                 <div class="header-grid">
-                    <div class="header-chip"><p-chip label="Étude"></p-chip></div>
-                    <div class="header-status">{{event.status}}</div>
+                    <div class="header-chip" style="background-color:{{event.color}}" >{{event.type}}</div>
+                    <div class="header-status">{{event.title}}</div>
                 </div>
                 <p class="m-0">
-                    Étudiant en IUT Informatique du Grand Ouest Normandie, j'ai pu acquérir des compétences en
-                    développement
-                    web et en base de données.</p>
+                    {{event.desc}}</p>
                 <p class="star-text"><i class="pi pi-star-fill"></i>
-                    Obtention d'un Diplôme
-                    Universitaire et
-                    technologique
+                  {{event.achievement}}
                 </p>
             </p-card>
 

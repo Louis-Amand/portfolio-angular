@@ -24,6 +24,8 @@ import { BackgroundComponent } from './home-page/background/background.component
 import { TimelineComponent } from './home-page/about-me/timeline/timeline.component';
 import { TextComponent } from './home-page/about-me/text/text.component';
 import { StatisticsComponent } from './home-page/about-me/statistics/statistics.component';
+import { CurriculumVitaeComponent } from './home-page/about-me/curriculum-vitae/curriculum-vitae.component';
+import { SkillsComponent } from './home-page/about-me/skills/skills.component';
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import { StatisticsComponent } from './home-page/about-me/statistics/statistics.
     AppComponent,
     TimelineComponent,
     TextComponent,
-    StatisticsComponent
+    StatisticsComponent,
+    CurriculumVitaeComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

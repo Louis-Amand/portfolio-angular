@@ -36,3 +36,18 @@
     color: #fff !important;
     margin-top: 4rem;
 }
+
+@media screen and (max-width: 1200px) {
+
+  .first-title {
+
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .second-title {
+    font-size: 1.3rem;
+    margin-top: 0;
+  }
+
+}

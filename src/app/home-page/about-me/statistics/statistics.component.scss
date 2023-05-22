@@ -6,7 +6,7 @@
 .stat-grid {
     display: grid;
     background-color: #eaeef4;
-    margin: 5% 10%;
+    margin: 10% 10%;
     border-radius: 1.5em;
     padding: 2em 4em;
     grid-template-columns: 2fr 1fr;
@@ -73,7 +73,8 @@
 }
 
 .number {
-    font-size: 2em !important;
+  font-size: 2em !important;
+  color: #482b67;
 }
 
 .button-row p-button {
@@ -90,22 +91,22 @@
     margin-left: 2em;
 }
 
-.linkedin-btn {
-    background-color: #640a5a !important;
-    border-radius: 1.5em;
-    border-color: #640a5a !important;
+.linkedin-btn, .github-button {
+    border-radius: 1.5em!important;
     text-align: center;
     display: flex;
     align-items: center;
 }
+.linkedin-btn{
+  margin:auto;
+  background-color: #482b67 !important;
+  border-color: #482b67 !important;
+}
 
 .github-button {
+  margin:auto;
     background-color: #394560 !important;
-    border-radius: 1.5em;
     border-color: #394560 !important;
-    text-align: center;
-    display: flex;
-    align-items: center;
     color: #fff !important;
 }
 
@@ -113,3 +114,39 @@
     border-radius: 1.5em;
     color: #111827 !important;
 }
+@media screen and (max-width: 900px){
+  .stat-grid {
+    padding: 2em;
+    grid-template-columns: none;
+    grid-template-areas:none;
+  }
+  .numbers-row {
+    grid-template-columns: 1fr;
+    grid-template-areas:none;
+  }
+  .button-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-row p-button {
+    width: 100%;
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  .button-row p-button+p-button {
+    margin-left: 0;
+  }
+  .numbers-row {
+    margin-top: 3em;
+    gap:2em;
+  }
+
+  .second-col{
+    display:none;
+  }
+}
+
+

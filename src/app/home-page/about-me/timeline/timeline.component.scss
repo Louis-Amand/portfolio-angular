@@ -1,0 +1,76 @@
+.title-timeline {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.title-timeline h2 {
+    font-size: 2.3em;
+}
+
+.title-timeline p {
+    font-size: 1.6em;
+}
+
+.p-timeline .p-timeline-event-marker {
+    border: 0.3em solid #11151d;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #ffffff;
+}
+
+.timeline {
+    margin: 10% 13%;
+}
+
+
+.timeline .p-card .header-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.p-timeline-vertical.p-timeline-alternate .p-timeline-event:nth-child(even) .p-timeline-event-content .header-grid {
+    flex-direction: row;
+}
+
+.p-timeline-vertical.p-timeline-alternate .p-timeline-event:nth-child(odd) .p-timeline-event-content .header-grid {
+    flex-direction: row-reverse;
+}
+
+.timeline .p-card .header-grid .header-status {
+    flex: 1 1 auto;
+    font-weight: bold;
+}
+
+.timeline .p-card .header-grid .header-chip {
+    flex: 0 0 auto;
+    margin-left: 8px;
+}
+
+.date .p-chip {
+    background-color: #11151d;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.star-text {
+    color: #482b67
+}
+@media screen and (max-width: 1200px) {
+
+  .p-timeline-event-opposite,
+  .p-timeline-event-separator{
+    display: none !important;
+  }
+  .p-timeline-event {
+    margin-top: 2em;
+  }
+}
+
+.header-chip{
+  padding:0.5em 1em;
+  border-radius: 30px;
+}

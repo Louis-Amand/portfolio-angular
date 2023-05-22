@@ -1,0 +1,152 @@
+.stat-grid p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.stat-grid {
+    display: grid;
+    background-color: #eaeef4;
+    margin: 10% 10%;
+    border-radius: 1.5em;
+    padding: 2em 4em;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "first-col second-col";
+    max-width: 100%;
+    align-items: center;
+    gap: 2em;
+}
+
+.stat-grid h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0.5em;
+
+}
+
+.first-col {
+
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.first-col h2 {
+    font-size: 2em;
+
+}
+
+.second-col {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-image {
+    height: 50vh;
+    width: 100%;
+    background-color: #111827;
+    // background-image: url("../../../assets/img/louis.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.5em;
+}
+
+.numbers-row {
+    text-align: center;
+    display: grid;
+    margin: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "number-1 number-2 number-3";
+    max-width: 100%;
+    gap: 0.5em;
+}
+
+.number-text {
+    font-size: 1.5em !important;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0.5em !important;
+    padding: 0;
+}
+
+.number {
+  font-size: 2em !important;
+  color: #482b67;
+}
+
+.button-row p-button {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.button-row {
+    padding-top: 2em !important;
+}
+
+.button-row p-button+p-button {
+    margin-left: 2em;
+}
+
+.linkedin-btn, .github-button {
+    border-radius: 1.5em!important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.linkedin-btn{
+  margin:auto;
+  background-color: #482b67 !important;
+  border-color: #482b67 !important;
+}
+
+.github-button {
+  margin:auto;
+    background-color: #394560 !important;
+    border-color: #394560 !important;
+    color: #fff !important;
+}
+
+.contact-button {
+    border-radius: 1.5em;
+    color: #111827 !important;
+}
+@media screen and (max-width: 900px){
+  .stat-grid {
+    padding: 2em;
+    grid-template-columns: none;
+    grid-template-areas:none;
+  }
+  .numbers-row {
+    grid-template-columns: 1fr;
+    grid-template-areas:none;
+  }
+  .button-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-row p-button {
+    width: 100%;
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  .button-row p-button+p-button {
+    margin-left: 0;
+  }
+  .numbers-row {
+    margin-top: 3em;
+    gap:2em;
+  }
+
+  .second-col{
+    display:none;
+  }
+}
+
+

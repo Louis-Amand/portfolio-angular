@@ -21,5 +21,15 @@
                 "dyslexia": "Dyslexia"
             }
         }
+    },
+    "home-page": {
+        "title": "DAVAINE Louis-Amand",
+        "subtitle": "IT AND MANAGEMENT CONSULTANT",
+        "button": "Discover the portfolio",
+        "about-me": {
+            "title": "Hello my name is Louis-Amand 👋,",
+            "first-paragraph": "I am currently studying in MBI (Master of Business Informatics - MIAGE) at the University of Bordeaux. Passionate about IT and management, I chose to specialize in these two areas by following a training of excellence teaching both the notions of digital systems and management.",
+            "second-paragraph": "My long-term goal is to create my own company specializing in IT and management auditing and consulting. My ambition is to contribute to the digital transition of companies and help them meet the new challenges of our time."
+        }
     }
 }

@@ -1,0 +1,77 @@
+<div class="title-skills">
+  <h2>Découvrez mes compétences</h2>
+  <p>
+    Explorez mes compétences acquises grâce à mon parcours universitaire et professionnel</p>
+</div>
+
+<div class="accordion-section">
+<button class="accordion" [ngClass]="{ 'active': isSectionExpanded[0] }" (click)="toggleSection(0)">
+  <i class="pi pi-angle-right" *ngIf="!isSectionExpanded[0]"></i>
+  <i class="pi pi-angle-down" *ngIf="isSectionExpanded[0]"></i>
+  Compétences en management 💪
+</button>
+<div class="panel" [ngClass]="{ 'show': isSectionExpanded[0] }">
+  <ul>
+    <li>Alignement des technologies de l'information avec les objectifs stratégiques de l'organisation</li>
+    <li>Communication avec les parties prenantes internes et externes</li>
+    <li>Élaboration et exécution de la stratégie informatique</li>
+    <li>Résolution de problèmes organisationnels</li>
+    <li>Prise de décision stratégique</li>
+    <li>Évaluation des risques et mise en place de mesures de sécurité</li>
+  </ul>
+</div>
+
+<button class="accordion" [ngClass]="{ 'active': isSectionExpanded[1] }" (click)="toggleSection(1)">
+  <i class="pi pi-angle-right" *ngIf="!isSectionExpanded[1]"></i>
+  <i class="pi pi-angle-down" *ngIf="isSectionExpanded[1]"></i>
+  Compétences en gestion de projets 📁
+</button>
+<div class="panel" [ngClass]="{ 'show': isSectionExpanded[1] }">
+  <ul>
+    <li>Leadership et gestion d'équipes informatiques</li>
+    <li>Gestion des ressources et des budgets</li>
+    <li>Planification et coordination de projet</li>
+    <li>Suivi des délais et des jalons</li>
+    <li>Gestion de la qualité et de la conformité</li>
+    <li>Communication et collaboration avec les parties prenantes</li>
+    <li>Suivi des performances et de la disponibilité du serveur</li>
+  </ul>
+</div>
+
+<button class="accordion" [ngClass]="{ 'active': isSectionExpanded[2] }" (click)="toggleSection(2)">
+  <i class="pi pi-angle-right" *ngIf="!isSectionExpanded[2]"></i>
+  <i class="pi pi-angle-down" *ngIf="isSectionExpanded[2]"></i>
+  Compétences techniques 💻
+</button>
+<div class="panel" [ngClass]="{ 'show': isSectionExpanded[2] }">
+  <ul>
+    <li>Conception et développement d'applications</li>
+    <li>Administration de serveurs</li>
+    <li>Résolution de problèmes techniques</li>
+    <li>Gestion des bases de données</li>
+    <li>Configuration et gestion des services de serveur</li>
+    <li>Sécurité des serveurs et des données</li>
+    <li>Respect du droit et des réglementations</li>
+    <li>Tests et débogage</li>
+    <li>Peux travailler avec la méthodologie Agile</li>
+  </ul>
+  <div class="it-skills-grid-container">
+    <div class="it-skills-grid-item"><img src="assets/img/skills/it-skills/angular.png" alt="Angular"></div>
+    <div class="it-skills-grid-item"><img src="assets/img/skills/it-skills/github.png" alt="Git"></div>
+    <div class="it-skills-grid-item"><img src="assets/img/skills/it-skills/react.png" alt="React"></div>
+    <div class="it-skills-grid-item"><img src="assets/img/skills/it-skills/php.png" alt="Php"></div>
+    <div class="it-skills-grid-item"><img src="assets/img/skills/it-skills/java.png" alt="java"></div>
+    <div class="it-skills-grid-item"><img src="assets/img/skills/it-skills/js.png" alt="javaScript"></div>
+    <div class="it-skills-grid-item"><img src="assets/img/skills/it-skills/html.png" alt="HTML"></div>
+    <div class="it-skills-grid-item"><img src="assets/img/skills/it-skills/jetbrains.png" alt="JetBrains"></div>
+    <div class="it-skills-grid-item"><img src="assets/img/skills/it-skills/wordpress_318-183439.png" alt="Wordpress"></div>
+    <div class="it-skills-grid-item"><img src="assets/img/skills/it-skills/docker.png" alt="Docker"></div>
+    <div class="it-skills-grid-item"><img src="assets/img/skills/it-skills/python.png" alt="Python"></div>
+<div class="it-skills-grid-item"><img src="assets/img/skills/it-skills/mysql.png" alt="MySQL"></div>
+<div class="it-skills-grid-item"><img src="assets/img/skills/it-skills/mongodb.png" alt="MongoDB"></div>
+    <div class="it-skills-grid-item"><img src="assets/img/skills/it-skills/nodejs.png" alt="NodeJs"></div>
+
+  </div>
+
+</div>
+</div>

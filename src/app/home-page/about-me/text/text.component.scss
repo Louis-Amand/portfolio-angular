@@ -1,0 +1,81 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: "photo text";
+    max-width: 100%;
+    align-items: center;
+    margin: 5% 10%;
+    gap: 5em;
+}
+
+@media screen and (max-width: 1312px) {
+    .grid {
+        margin: 5% 5%;
+        gap: 2em;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .contact-info p {
+        margin: 0.5em 0 !important;
+    }
+
+}
+
+.photo {
+    height: 100% !important;
+    width: 100% !important;
+    background-color: #111827 !important;
+    background-size: cover !important;
+    background-position: center !important;
+    border-radius: 1.5em !important;
+}
+
+.text {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    font-size: 1.2em;
+    color: #111827;
+
+}
+
+.greeting {
+    font-size: 1.7em !important;
+    font-weight: bold !important;
+    margin: 0 !important;
+    margin-bottom: 0.5em !important;
+
+}
+
+.contact-info {
+    margin-top: 1em;
+}
+
+.contact-info p {
+    display: inline-block;
+    margin: 0 1.3em;
+}
+
+.contact-info i {
+    background-image: linear-gradient(to bottom, #FB008B, #111827);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-right: 0.8em;
+}

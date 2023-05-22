@@ -1,0 +1,85 @@
+
+.title-skills {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.title-skills h2 {
+  font-size: 2.3em;
+}
+
+.title-skills p {
+  font-size: 1.6em;
+}
+
+/* Accordéon */
+.accordion-section{
+  margin: 5% 20%;
+}
+
+.accordion {
+  background-color: #eaeef4;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.5em;
+  transition: 0.4s;
+  margin-top:2em;
+  border-radius:20px;
+  color:#111827;
+  display: flex;
+  align-items: center;
+}
+
+.accordion i{
+  font-size:1em;
+  margin-right:1em;
+}
+
+.accordion:hover {
+  background-color: rgba(17, 24, 39, 0.04);
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.accordion-section ul{
+  margin-top:3em;
+  padding-left:2em;
+}
+
+.accordion-section ul li::marker {
+  color: #482b67;
+}
+
+.accordion-section ul li{
+  margin-top:1em;
+  font-size:1.2em;
+  color:#111827;
+}
+
+.it-skills-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.it-skills-grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.it-skills-grid-item img {
+  max-width: 100%;
+  max-height: 100%;
+}

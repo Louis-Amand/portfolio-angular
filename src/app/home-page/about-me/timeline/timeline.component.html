@@ -1,0 +1,25 @@
+<div class="title-timeline">
+    <h2>Mes études et expériences professionelles</h2>
+    <p>Découvrez mon parcours universitaire et professionel </p>
+</div>
+
+<div class="timeline">
+    <p-timeline [value]="events" align="alternate">
+        <ng-template pTemplate="content" let-event>
+            <!-- <p>{{event.date}}</p> -->
+            <p-chip label="{{event.date}}" class="date"></p-chip>
+            <p-card>
+                <div class="header-grid">
+                    <div class="header-chip" style="background-color:{{event.color}}" >{{event.type}}</div>
+                    <div class="header-status">{{event.title}}</div>
+                </div>
+                <p class="m-0">
+                    {{event.desc}}</p>
+                <p class="star-text"><i class="pi pi-star-fill"></i>
+                  {{event.achievement}}
+                </p>
+            </p-card>
+
+        </ng-template>
+    </p-timeline>
+</div>

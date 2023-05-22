@@ -21,5 +21,15 @@
                 "dyslexia": "Dyslexie"
             }
         }
+    },
+    "home-page": {
+        "title": "DAVAINE Louis-Amand",
+        "subtitle": "Consultant en Systèmes du Numérique et Management",
+        "button": "Découvrir le portfolio",
+        "about-me": {
+            "title": "Bonjour je m'appelle Louis-Amand 👋,",
+            "first-paragraph": "Je suis actuellement étudiant en Master 1 MIAGE à l'Université de Bordeaux. Passionné par l'informatique et le management, j'ai choisi de me spécialiser dans ces deux domaines en suivant une formation d'excellence enseignant aussi bien les notions des systèmes du numérique que du Management.",
+            "second-paragraph": "Mon objectif à long terme est de créer ma propre entreprise spécialisée dans l'audit et le consulting en informatique et en management. Mon ambition est de contribuer à la transition numérique des entreprises et de les aider à relever les nouveaux défis de notre époque."
+        }
     }
 }

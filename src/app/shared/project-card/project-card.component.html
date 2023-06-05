@@ -1,0 +1,10 @@
+<div class="project-card">
+  <img [src]="imageUrl" alt="Project Image" class="project-image">
+  <div class="project-card-header">
+    <h3 class="project-name">{{ projectName }}</h3>
+    <p class="project-intro">{{projectIntro}}</p>
+    <div class="technologies">
+      <p class="tech-label" *ngFor="let technology of technologies">{{ technology }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="fp-bg">
+  <div class="fp-timeline">
+    <h2>Découvrez mes projets favoris</h2>
+    <p>Voici 4 projets représentatif de mon travail, découvrez les autres ;)</p>
+  </div>
+  <div class="projects-container">
+    <div class="project-card" *ngFor="let project of projects | slice:0:4">
+      <app-project-card
+        [imageUrl]="project.imageUrl"
+        [projectName]="project.name"
+        [projectIntro]="project.intro"
+        [technologies]="project.technologies"
+        [favorite]="project.favorite"
+      ></app-project-card>
+    </div>
+  </div>

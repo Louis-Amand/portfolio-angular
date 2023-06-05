@@ -26,6 +26,8 @@ import { TextComponent } from './home-page/about-me/text/text.component';
 import { StatisticsComponent } from './home-page/about-me/statistics/statistics.component';
 import { CurriculumVitaeComponent } from './home-page/about-me/curriculum-vitae/curriculum-vitae.component';
 import { SkillsComponent } from './home-page/about-me/skills/skills.component';
+import { FavoriteProjectsComponent } from './home-page/about-me/favorite-projects/favorite-projects.component';
+import { ProjectCardComponent } from './shared/project-card/project-card.component';
 
 
 @NgModule({
@@ -42,7 +44,9 @@ import { SkillsComponent } from './home-page/about-me/skills/skills.component';
     TextComponent,
     StatisticsComponent,
     CurriculumVitaeComponent,
-    SkillsComponent
+    SkillsComponent,
+    FavoriteProjectsComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,

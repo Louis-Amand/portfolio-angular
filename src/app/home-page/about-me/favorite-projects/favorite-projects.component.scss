@@ -1,0 +1,26 @@
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  grid-gap: 5em;
+  margin:5% 10%;
+
+}
+
+.fp-bg{
+  background-color: #111827;
+  padding:2em 0;
+}
+
+.fp-timeline {
+  text-align: center;
+}
+
+.fp-timeline h2 {
+  font-size: 2.3em;
+  color:white;
+}
+
+.fp-timeline p {
+  font-size: 1.6em;
+  color:white;
+}
